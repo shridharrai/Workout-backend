@@ -12,7 +12,7 @@ const app = express();
 // middleware
 app.use(
   cors({
-    origin: ["http://localhost:3000", process.env.BASE_URI],
+    origin: [process.env.LOCAL_BASE_URI, process.env.HOST_BASE_URI],
   })
 );
 
